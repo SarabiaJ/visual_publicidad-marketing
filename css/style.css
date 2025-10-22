@@ -1,0 +1,177 @@
+/* ==========================
+   PALETA INSTITUCIONAL
+   ========================== */
+:root {
+    --amarillo: #FFD60A;
+    --azul-rey: #003566;
+    --cielo: #8ECAE6;
+    --negro: #000000;
+    --naranja: #FB8500;
+    --naranja-rojizo: #D55D00;
+    --morado: #8338EC;
+    --blanco: #ffffff;
+}
+
+/* ==========================
+   ESTILOS GENERALES
+   ========================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--negro);
+    background-color: var(--blanco);
+    margin: 0;
+    padding: 0;
+}
+
+/* Párrafos */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    text-transform: none;
+}
+
+/* ==========================
+   NAVBAR
+   ========================== */
+.navbar {
+    background-color: var(--blanco) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img {
+    height: 50px;
+}
+.navbar-nav .nav-link {
+    color: var(--azul-rey);
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--naranja);
+}
+
+/* ==========================
+   BOTONES
+   ========================== */
+.btn-warning {
+    background-color: var(--amarillo);
+    color: var(--negro);
+    border: none;
+    transition: 0.3s;
+}
+.btn-warning:hover {
+    background-color: var(--naranja);
+    color: var(--blanco);
+}
+
+/* ==========================
+   SECCIONES Y CARDS
+   ========================== */
+section {
+    padding: 60px 0;
+}
+
+/* Cards uniformes */
+.card {
+    border-radius: 15px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.card-body p {
+    font-size: 0.95rem;
+}
+
+/* Altura uniforme para cards en grids */
+.row .card {
+    height: 100%;
+}
+
+/* ==========================
+   ENCABEZADOS Y TEXTOS
+   ========================== */
+h1, h2 {
+    color: var(--azul-rey);
+}
+.text-white h2, .text-white h3 {
+    color: var(--blanco);
+}
+
+/* ==========================
+   PIE DE PÁGINA
+   ========================== */
+footer {
+    background-color: var(--blanco);
+    color: #666;
+    font-size: 0.9rem;
+    padding: 20px 0;
+}
+footer a {
+    color: var(--negro);
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+footer a:hover {
+    color: var(--naranja);
+}
+
+/* ==========================
+   FORMULARIOS
+   ========================== */
+form input, form textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+form input:focus, form textarea:focus {
+    border-color: var(--azul-rey);
+    box-shadow: 0 0 4px rgba(0, 53, 102, 0.3);
+}
+
+/* ==========================
+   MAPA
+   ========================== */
+#mapa {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* ==========================
+   COLORES DE SECCIONES
+   ========================== */
+.bg-azul {
+    background-color: var(--azul-rey);
+    color: var(--blanco);
+}
+.bg-amarillo {
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+.bg-cielo {
+    background-color: var(--cielo);
+}
+.bg-naranja {
+    background-color: var(--naranja);
+    color: var(--blanco);
+}
+.bg-morado {
+    background-color: var(--morado);
+    color: var(--blanco);
+}
+
+/* ==========================
+   RESPONSIVE
+   ========================== */
+@media (max-width: 768px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    p { font-size: 0.95rem; }
+}
