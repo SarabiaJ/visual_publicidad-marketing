@@ -95,6 +95,12 @@ section {
     height: 100%;
 }
 
+#im {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 /* ==========================
    ENCABEZADOS Y TEXTOS
    ========================== */
